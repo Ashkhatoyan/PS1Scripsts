@@ -1,5 +1,6 @@
+$domaincontrller = Read-Host "Pls enter your DC"
 $domain = $env:USERDNSDOMAIN
-if ($domain -contains "aadds.benivo.local") {
+if ($domain -contains "$domaincontroller") {
     $username = "$env:USERNAME.aadds"
    }
    else {
